@@ -11,5 +11,4 @@
     android:text="@string/text"
     android:textSize="35sp"/>
 
-
 </LinearLayout>
