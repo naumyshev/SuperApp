@@ -7,4 +7,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="btn_style">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@drawable/selector_button_text</item>
+        <item name="android:background">@drawable/selector_button_custom</item>
+    </style>
+
 </resources>
