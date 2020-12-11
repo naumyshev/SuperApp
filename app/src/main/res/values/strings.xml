@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">SuperApp</string>
-    <string name="text">Test</string>
+    <string name="btn_text_view">TEXTVIEW</string>
+    <string name="btn_edittext">EDITTEXT</string>
+    <string name="btn_button">BUTTON</string>
+    <string name="btn_app_bar">APP-BAR</string>
+    <string name="btn_toolbar">TOOLBAR</string>
+    <string name="btn_imageview">IMAGEVIEW</string>
+    <string name="btn_spinner">SPINNER</string>
+    <string name="btn_adapterview">ADAPTERVIEW</string>
+    <string name="btn_recyclerview">RECYCLERVIEW</string>
+    <string name="btn_service">SERVICE</string>
+    <string name="btn_content_provider">CONTENT PROVIDER</string>
 
 </resources>
