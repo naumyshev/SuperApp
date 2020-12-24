@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:maxLines="4"
+        android:id="@+id/longText"
+        android:text="@string/text_magnifying_glass"
+        style="@style/Text">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text"
+        android:layout_gravity="end"
+        android:paddingRight="10dp"
+        android:id="@+id/read_full"
+        android:text="@string/read_full"
+        android:textColor="@color/colorPrimary">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="monospace"
+        android:text="textview monospace font"
+        android:textSize="22sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_gravity="center"
+        android:fontFamily="casual"
+        android:text="textview casual font"
+        android:textSize="22sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_gravity="center"
+        android:text="TextMediumBlack Style"
+        style="@style/TextMediumBlack">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_gravity="center"
+        android:text="TextBig Style"
+        style="@style/TextBigBlack">
+    </TextView>
+
+</LinearLayout>

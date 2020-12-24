@@ -16,6 +16,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/button_textview"
         android:text="@string/btn_text_view"
         android:layout_marginBottom="20dp"
         style="@style/btn_style">

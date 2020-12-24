@@ -2,8 +2,10 @@ package com.naumyshev.superapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +23,16 @@ class MainActivity : AppCompatActivity() {
             add<GeneralFragment>(R.id.fragment_container_view)
         }
     }
+
+    fun openTextViewScreen(){
+        supportFragmentManager.commit {
+            setReorderingAllowed(true)
+            replace<TextViewFragment>(R.id.fragment_container_view)
+        }
+    }
 }
+
+
 
 
 
