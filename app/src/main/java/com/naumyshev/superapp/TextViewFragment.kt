@@ -7,10 +7,16 @@ import com.naumyshev.superapp.databinding.FragmentTextViewBinding
 
 class TextViewFragment: Fragment(R.layout.fragment_text_view) {
 
+    companion object {
+        const val TAG = "TextViewFragment"
+    }
+
     private var fragmentTextViewBinding: FragmentTextViewBinding? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        fragmentTextViewBinding = FragmentTextViewBinding.bind(view)
 
         fragmentTextViewBinding?.longText?.post {
             fragmentTextViewBinding?.longText?.lineCount?.let { lineCount ->
@@ -30,5 +36,13 @@ class TextViewFragment: Fragment(R.layout.fragment_text_view) {
 
         fragmentTextViewBinding?.readFull?.setOnClickListener(collapseListener)
 
+        fragmentTextViewBinding?.toolbar?.setNavigationOnClickListener { activity?.onBackPressed() }
+
+    }
+
+    override fun onDestroyView() {
+        // Consider not storing the binding instance in a field, if not needed.
+        fragmentTextViewBinding = null
+        super.onDestroyView()
     }
 }

@@ -27,7 +27,8 @@ class MainActivity : AppCompatActivity() {
     fun openTextViewScreen(){
         supportFragmentManager.commit {
             setReorderingAllowed(true)
-            replace<TextViewFragment>(R.id.fragment_container_view)
+            replace<TextViewFragment>(R.id.fragment_container_view, TextViewFragment.TAG)
+            addToBackStack(TextViewFragment.TAG)
         }
     }
 }
