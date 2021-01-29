@@ -1,11 +1,13 @@
-package com.naumyshev.superapp
+package com.naumyshev.superapp.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import com.naumyshev.superapp.main.screens.general.GeneralFragment
+import com.naumyshev.superapp.R
+import com.naumyshev.superapp.TextViewFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
