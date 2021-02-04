@@ -1,36 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         style="@style/SuperAppToolbar"
-        android:background="?attr/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
         app:navigationIcon="@drawable/ic_back"
-        app:title="@string/app_name"/>
+        app:title="@string/app_name" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:maxLines="4"
         android:id="@+id/longText"
-        android:text="@string/text_magnifying_glass"
-        style="@style/Text">
-    </TextView>
-
-    <TextView
+        style="@style/Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/Text"
-        android:layout_gravity="end"
-        android:paddingRight="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:maxLines="4"
+        android:text="@string/text_magnifying_glass" />
+
+    <TextView
         android:id="@+id/read_full"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
         android:text="@string/read_full"
         android:textColor="@color/colorPrimary">
 
@@ -39,39 +41,35 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
         android:layout_gravity="center"
+        android:layout_margin="25dp"
         android:fontFamily="monospace"
-        android:text="textview monospace font"
-        android:textSize="22sp">
-    </TextView>
+        android:text="@string/textview_monospace_font"
+        android:textSize="22sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
         android:layout_gravity="center"
+        android:layout_margin="25dp"
         android:fontFamily="casual"
-        android:text="textview casual font"
-        android:textSize="22sp">
-    </TextView>
+        android:text="@string/textview_casual_font"
+        android:textSize="22sp" />
 
     <TextView
+        style="@style/TextMediumBlack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
         android:layout_gravity="center"
-        android:text="TextMediumBlack Style"
-        style="@style/TextMediumBlack">
-    </TextView>
+        android:layout_margin="25dp"
+        android:text="@string/text_medium_black_style" />
 
     <TextView
+        style="@style/TextBigBlack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="25dp"
         android:layout_gravity="center"
-        android:text="TextBig Style"
-        style="@style/TextBigBlack">
-    </TextView>
+        android:layout_margin="25dp"
+        android:text="@string/text_big_style" />
 
 </LinearLayout>

@@ -5,13 +5,11 @@ import com.naumyshev.superapp.base.view.BaseViewInterface
 
 interface GeneralContractInterface {
 
-    interface View: BaseViewInterface {
-
+    interface View : BaseViewInterface {
         fun openTextViewScreen()
     }
 
-    interface Presenter: BasePresenterInterface<View> {
-
+    interface Presenter : BasePresenterInterface<View> {
         fun onTextViewButtonClick()
     }
 }

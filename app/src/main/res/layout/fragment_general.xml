@@ -30,88 +30,87 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/button_textview"
                 android:text="@string/btn_text_view"
-                android:layout_marginBottom="20dp"
-                style="@style/btn_style">
+                style="@style/SupperAppButton">
             </Button>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_edittext"
-                android:layout_marginBottom="20dp"
-                style="@style/btn_style">
+                android:layout_marginTop="20dp"
+                style="@style/SupperAppButton">
             </Button>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_button"
-                android:layout_marginBottom="20dp"
-                style="@style/btn_style">
+                android:layout_marginTop="20dp"
+                style="@style/SupperAppButton">
             </Button>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_app_bar"
-                android:layout_marginBottom="20dp"
-                style="@style/btn_style">
+                android:layout_marginTop="20dp"
+                style="@style/SupperAppButton">
             </Button>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_toolbar"
-                android:layout_marginBottom="20dp"
-                style="@style/btn_style">
+                android:layout_marginTop="20dp"
+                style="@style/SupperAppButton">
             </Button>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_imageview"
-                android:layout_marginBottom="20dp"
-                style="@style/btn_style">
+                android:layout_marginTop="20dp"
+                style="@style/SupperAppButton">
             </Button>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_spinner"
-                android:layout_marginBottom="20dp"
-                style="@style/btn_style">
+                android:layout_marginTop="20dp"
+                style="@style/SupperAppButton">
             </Button>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_adapterview"
-                android:layout_marginBottom="20dp"
-                style="@style/btn_style">
+                android:layout_marginTop="20dp"
+                style="@style/SupperAppButton">
             </Button>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_recyclerview"
-                android:layout_marginBottom="20dp"
-                style="@style/btn_style">
+                android:layout_marginTop="20dp"
+                style="@style/SupperAppButton">
             </Button>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_service"
-                android:layout_marginBottom="20dp"
-                style="@style/btn_style">
+                android:layout_marginTop="20dp"
+                style="@style/SupperAppButton">
             </Button>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btn_content_provider"
-                android:layout_marginBottom="20dp"
-                style="@style/btn_style">
+                android:layout_marginTop="20dp"
+                style="@style/SupperAppButton">
             </Button>
 
         </LinearLayout>
