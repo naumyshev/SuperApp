@@ -7,4 +7,8 @@ class GeneralPresenter : BasePresenter<GeneralContractInterface.View>(),
     override fun onTextViewButtonClick() {
         view?.openTextViewScreen()
     }
+
+    override fun onEditTextButtonClick() {
+        view?.openEditTextScreen()
+    }
 }
