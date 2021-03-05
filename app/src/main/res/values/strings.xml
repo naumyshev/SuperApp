@@ -18,5 +18,7 @@
     <string name="textview_casual_font">textview casual font</string>
     <string name="text_medium_black_style">TextMediumBlack Style</string>
     <string name="text_big_style">TextBig Style</string>
+    <string name="pass_hint">password</string>
+    <string name="login_hint">login</string>
 
 </resources>
