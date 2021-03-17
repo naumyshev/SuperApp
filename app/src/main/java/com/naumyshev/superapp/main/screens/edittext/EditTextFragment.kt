@@ -17,7 +17,7 @@ class EditTextFragment: Fragment(R.layout.fragment_edit_text), EditTextContractI
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         fragmentEditTextBinding = FragmentEditTextBinding.bind(view)
-        fragmentEditTextBinding?.toolbar?.title = "EditText"
+        fragmentEditTextBinding?.toolbar?.title = getString(R.string.edit_text)
         fragmentEditTextBinding?.toolbar?.setNavigationOnClickListener { activity?.onBackPressed() }
 
         fragmentEditTextBinding?.loginButton?.setOnClickListener { editTextPresenter.onLoginButtonClick() }
