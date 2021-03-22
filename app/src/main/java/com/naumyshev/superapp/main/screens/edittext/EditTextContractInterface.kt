@@ -6,7 +6,7 @@ import com.naumyshev.superapp.base.view.BaseViewInterface
 interface EditTextContractInterface {
 
     interface View: BaseViewInterface {
-        fun saveLogin()
+        fun showLoginAndPass()
     }
 
     interface Presenter: BasePresenterInterface<View> {

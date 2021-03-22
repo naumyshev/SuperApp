@@ -21,5 +21,7 @@
     <string name="pass_hint">password</string>
     <string name="login_hint">login</string>
     <string name="edit_text">EditText</string>
+    <string name="login_btn">LOGIN</string>
+    <string name="login_label">login:</string>
 
 </resources>

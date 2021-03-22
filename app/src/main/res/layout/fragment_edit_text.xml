@@ -63,7 +63,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="16dp"
-                android:text="LOGIN"></Button>
+                android:enabled="false"
+                android:text="@string/login_btn">
+            </Button>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -75,15 +77,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
-                    android:text="login:"
-                    android:textSize="20sp"></TextView>
+                    android:text="@string/login_label"
+                    android:textSize="20sp">
+                </TextView>
 
                 <TextView
+                    android:id="@+id/loginTv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
-                    android:text="***"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="20sp">
+                </TextView>
             </LinearLayout>
 
             <LinearLayout
@@ -97,14 +101,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:text="password:"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="20sp">
+                </TextView>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:text="***"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="20sp">
+                </TextView>
             </LinearLayout>
 
             <View
@@ -132,7 +138,8 @@
                 android:background="@drawable/selector_et_background"
                 android:gravity="center"
                 android:inputType="number"
-                android:maxLines="1"></EditText>
+                android:maxLines="1">
+            </EditText>
 
             <TextView
                 android:id="@+id/et_result"
@@ -140,7 +147,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
-                android:layout_marginTop="16dp"></TextView>
+                android:layout_marginTop="16dp">
+            </TextView>
 
             <TextView
                 android:id="@+id/et_focus"
@@ -149,7 +157,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="16dp"
-                android:text="EditText has not focus"></TextView>
+                android:text="EditText has not focus">
+            </TextView>
 
         </LinearLayout>
 

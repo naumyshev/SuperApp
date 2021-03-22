@@ -33,7 +33,21 @@ class EditTextFragment: Fragment(R.layout.fragment_edit_text), EditTextContractI
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 fragmentEditTextBinding?.loginButton?.isEnabled =
-                    !p0.isNullOrEmpty() && fragmentEditTextBinding?.passwordEt?.text?.isNullOrEmpty() == true
+                    !p0.isNullOrEmpty() && fragmentEditTextBinding?.passwordEt?.text?.isNotEmpty() == true
+            }
+
+            override fun afterTextChanged(p0: Editable?) {
+            }
+        })
+
+        fragmentEditTextBinding?.passwordEt?.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                fragmentEditTextBinding?.loginButton?.isEnabled =
+                    !p0.isNullOrEmpty() && fragmentEditTextBinding?.loginEt?.text?.isNotEmpty() == true
+
             }
 
             override fun afterTextChanged(p0: Editable?) {
@@ -47,7 +61,7 @@ class EditTextFragment: Fragment(R.layout.fragment_edit_text), EditTextContractI
         super.onDestroyView()
     }
 
-    override fun saveLogin(){
-        //to do body
+    override fun showLoginAndPass(){
+        fragmentEditTextBinding?.loginTv?.text = "тыщь"//fragmentEditTextBinding?.loginEt?.editableText?.toString()
     }
 }
