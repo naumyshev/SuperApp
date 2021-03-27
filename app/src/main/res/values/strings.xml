@@ -23,5 +23,7 @@
     <string name="edit_text">EditText</string>
     <string name="login_btn">LOGIN</string>
     <string name="login_label">login:</string>
+    <string name="has_not_focus">EditText has not focus</string>
+    <string name="has_focus">EditText has focus</string>
 
 </resources>
