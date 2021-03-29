@@ -91,6 +91,7 @@ class EditTextFragment: Fragment(R.layout.fragment_edit_text), EditTextContractI
     }
 
     override fun onDestroyView() {
+        editTextPresenter.detach()
         fragmentEditTextBinding = null
         super.onDestroyView()
     }
