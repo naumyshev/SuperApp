@@ -25,5 +25,6 @@
     <string name="login_label">login:</string>
     <string name="has_not_focus">EditText has not focus</string>
     <string name="has_focus">EditText has focus</string>
+    <string name="password_label">password:</string>
 
 </resources>

@@ -22,15 +22,14 @@ class EditTextFragment: Fragment(R.layout.fragment_edit_text), EditTextContractI
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        fragmentEditTextBinding = FragmentEditTextBinding.bind(view)
+        editTextPresenter.attach(this)
+
         if (savedInstanceState != null) {
             fragmentEditTextBinding?.focusTv?.text = savedInstanceState.getCharSequence(STATE_FOCUS)
             fragmentEditTextBinding?.loginTv?.text = savedInstanceState.getCharSequence(STATE_LOGIN)
             fragmentEditTextBinding?.passwordTv?.text = savedInstanceState.getCharSequence(STATE_PASSWORD)
         }
-
-        fragmentEditTextBinding = FragmentEditTextBinding.bind(view)
-        editTextPresenter.attach(this)
-
         fragmentEditTextBinding?.toolbar?.title = getString(R.string.edit_text)
         fragmentEditTextBinding?.toolbar?.setNavigationOnClickListener { activity?.onBackPressed() }
         fragmentEditTextBinding?.loginButton?.setOnClickListener { editTextPresenter.onLoginButtonClick() }
