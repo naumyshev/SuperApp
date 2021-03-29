@@ -16,6 +16,7 @@ class GeneralFragment : BaseFragment(R.layout.fragment_general), GeneralContract
         fragmentGeneralBinding = FragmentGeneralBinding.bind(view)
         generalPresenter.attach(this)
         fragmentGeneralBinding?.buttonTextview?.setOnClickListener { generalPresenter.onTextViewButtonClick() }
+        fragmentGeneralBinding?.buttonEdittext?.setOnClickListener { generalPresenter.onEditTextButtonClick() }
     }
 
     override fun onDestroyView() {
@@ -26,5 +27,9 @@ class GeneralFragment : BaseFragment(R.layout.fragment_general), GeneralContract
 
     override fun openTextViewScreen() {
         (activity as? MainActivity)?.openTextViewScreen()
+    }
+
+    override fun openEditTextScreen() {
+        (activity as? MainActivity)?.openEditTextScreen()
     }
 }

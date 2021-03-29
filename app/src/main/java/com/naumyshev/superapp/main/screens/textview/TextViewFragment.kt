@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import com.naumyshev.superapp.R
 import com.naumyshev.superapp.databinding.FragmentTextViewBinding
 
-class TextViewFragment : Fragment(R.layout.fragment_text_view) {
+class TextViewFragment: Fragment(R.layout.fragment_text_view) {
     companion object {
         const val TAG = "TextViewFragment"
     }

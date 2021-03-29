@@ -6,6 +6,7 @@ import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
 import com.naumyshev.superapp.R
+import com.naumyshev.superapp.main.screens.edittext.EditTextFragment
 import com.naumyshev.superapp.main.screens.general.GeneralFragment
 import com.naumyshev.superapp.main.screens.textview.TextViewFragment
 
@@ -31,6 +32,14 @@ class MainActivity : AppCompatActivity() {
             setReorderingAllowed(true)
             replace<TextViewFragment>(R.id.fragment_container_view, TextViewFragment.TAG)
             addToBackStack(TextViewFragment.TAG)
+        }
+    }
+
+    fun openEditTextScreen() {
+        supportFragmentManager.commit {
+            setReorderingAllowed(true)
+            replace<EditTextFragment>(R.id.fragment_container_view, EditTextFragment.TAG)
+            addToBackStack(EditTextFragment.TAG)
         }
     }
 }

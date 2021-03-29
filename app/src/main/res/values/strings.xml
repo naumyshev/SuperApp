@@ -18,5 +18,13 @@
     <string name="textview_casual_font">textview casual font</string>
     <string name="text_medium_black_style">TextMediumBlack Style</string>
     <string name="text_big_style">TextBig Style</string>
+    <string name="pass_hint">password</string>
+    <string name="login_hint">login</string>
+    <string name="edit_text">EditText</string>
+    <string name="login_btn">LOGIN</string>
+    <string name="login_label">login:</string>
+    <string name="has_not_focus">EditText has not focus</string>
+    <string name="has_focus">EditText has focus</string>
+    <string name="password_label">password:</string>
 
 </resources>

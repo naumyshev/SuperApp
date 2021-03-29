@@ -36,6 +36,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/button_edittext"
                 android:text="@string/btn_edittext"
                 android:layout_marginTop="20dp"
                 style="@style/SupperAppButton">

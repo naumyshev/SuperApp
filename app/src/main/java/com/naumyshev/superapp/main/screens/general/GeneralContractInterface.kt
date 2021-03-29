@@ -7,9 +7,11 @@ interface GeneralContractInterface {
 
     interface View : BaseViewInterface {
         fun openTextViewScreen()
+        fun openEditTextScreen()
     }
 
     interface Presenter : BasePresenterInterface<View> {
         fun onTextViewButtonClick()
+        fun onEditTextButtonClick()
     }
 }
